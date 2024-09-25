@@ -155,7 +155,7 @@ dmypy.json
 cython_debug/
 
 #mediapipe samples folder
-/mediapipe-samples
+mediapipe-samples/
 
 
 # PyCharm
