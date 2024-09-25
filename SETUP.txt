@@ -1,0 +1,12 @@
+1) Enter the virtual environment
+
+source myenv/bin/activate
+
+
+2) Install a package
+
+python3 -m pip install [PACKAGE_NAME]
+
+3) Run Activate.sh
+
+BumzaScripts/activate.sh
