@@ -3,7 +3,7 @@
 #### This repository contains all the code necessary for implementing a self-driving PyCar based on real-time data collected from a camera and ultrasonic sensors.
 
 ## Video Demonstration
-[![Thumbnail](https://cdn.prod.website-files.com/63d04d4b1b2834390e504ddf/64f8e5421c1629c792309d26_Artboard%2013-tiny%20copy.jpg)]([(https://drive.google.com/file/d/1t-hd1w701OHVkuEkH3VGtFMHdtcwcNUX/view?t=3])
+[![Thumbnail](https://cdn.prod.website-files.com/63d04d4b1b2834390e504ddf/64f8e5421c1629c792309d26_Artboard%2013-tiny%20copy.jpg)](https://drive.google.com/file/d/1t-hd1w701OHVkuEkH3VGtFMHdtcwcNUX/view?t=3)
 
 ## GitHub Repository
 Access the full codebase here:  
