@@ -3,9 +3,33 @@
   <head>
     <meta charset="UTF-8">
     <style>
+      span, #title{
+        color: white;
+      }
+      p{
+        font-size: 20px;
+        color:azure;
+      }
+      #title{
+        font-size: 50px;
+        font-weight: bold;
+      }
       .container{
-                  display: flex;
-                }
+        margin-top: 20vh;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 7.5px );
+        -webkit-backdrop-filter: blur( 7.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+      }
+
+      body{
+        background-image: url('space.jpg');
+      }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -14,23 +38,24 @@
   </head>
 
   <body>
-    <div class="container">
+    <!-- <div class="container"> -->
   
-      <div class="jumbotron">
-      <h2>CS498: IoT -- Lab 2</h2>
+      <!-- <div class="jumbotron"> -->
 
       <!-- <video class="center" width="600" height="400" controls>
         <source src="samplevid.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video> -->
-      <img src="./media/default_background.png" id='pics'>
-    </div> 
+      <!-- <img src="./media/default_background.png" id='pics'> -->
+    <!-- </div>  -->
   
-  </div>
+  <!-- </div> -->
 
   <div class="row">
     <div class="container">
-        <div class="jumbotron text-center col-md-6">
+        <h2 id="title" style="grid-column: 1 / span 2; text-align: center;">CS437: IoT Lab 2</h2>
+
+        <div class="jumbotron text-center col-md-8" style="background-color: rgba(0, 128, 0, 0);">
             <span>&nbsp;&nbsp;</span> 
             <span id="upArrow" style='font-size:50px; color:grey; user-select: none;'>&#8679;</span>
             <br>
@@ -42,19 +67,18 @@
             <span id="downArrow" style='font-size:50px; color:grey;'>&#8681;</span>
         </div>
 
-        <div class="jumbotron text-left col-md-6">
-        <input id="message" type="text" placeholder="message to Pi"/>
-        <button class="btn btn-success" onclick="update_data()">Sumbit</button>
+        <div class="jumbotron text-left col-md-8" style="background-color: rgba(240, 248, 255, 0);">
+        <input id="message" type="text" placeholder="Speed"/>
+        <button class="btn btn-success" onclick="update_data()">Submit</button>
           <p>
-            <span id="direction_dot" style="color:Green">&bull;</span> Car Direction: <span id="direction"> </span>
+            Car Direction: <span id="direction">N/A</span>
            <br>
-           <span id="speed_dot" style="color:green">&bull;</span> Speed: <span id="speed">0.0</span>  
+            Speed: <span id="speed">N/A</span>  
            <br>
-           <span id="distance_dot" style="color:green">&bull;</span> Distance Traveled: <span id="distance">0.0</span>
+           Distance To Object In Front: <span id="distance">N/A</span>
            <br>
-           <span id="temprature_dot" style="color:green">&bull;</span> Temperature of the Pi: <span id="temperature">0.0</span>
+           Temperature of the Pi: <span id="temperature">N/A</span>
            <br>
-           Bluetooth return value: <span id="bluetooth"> </span>
           </p>  
         </div>
     </div>
