@@ -9,7 +9,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         text = input("Enter your message: ") # Note change to the old (Python 2) raw_input
         if text == "quit":
             break
-        s.send(text.encode())     # send the encoded message (send in binary format)
+        s.send(text.encode('utf-8'))   # send the encoded message (send in binary format)
 
         data = s.recv(1024)
         print("from server: ", data)
